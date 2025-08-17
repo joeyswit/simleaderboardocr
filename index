@@ -1,1 +1,63 @@
-      <img src="/simleaderboardocr.png" alt="espnocr" class="w-24 h-24 spin-y">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    .header-font {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes spinY {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+    .spin-y {
+      animation: spinY 1.5s linear infinite;
+      transform-style: preserve-3d;
+    }
+  </style>
+</head>
+<body class="bg-green-50 min-h-screen flex flex-col">
+
+  <!-- ✅ Main Content -->
+  <div id="content" class="opacity-0 transition-opacity duration-700 ease-out">
+
+    <!-- Header -->
+    <header class="bg-green-100 py-5 px-4 flex justify-center sticky top-0 z-40 shadow-md">
+      <div class="flex items-center justify-center gap-3 w-full max-w-md relative">
+        <a href="https://birdiebuzzalerts.com/">
+          <img src="/Logo3.png" alt="Bird Logo" class="h-14 sm:h-18 md:h-24 w-auto">
+        </a>
+        <a href="https://birdiebuzzalerts.com/">
+          <img src="/Text3.png" alt="BirdieBuzz Text" class="h-12 sm:h-14 md:h-18 w-auto">
+        </a>
+      </div>
+    </header>
+
+    <!-- Logo Download Section -->
+    <main class="flex-grow px-6 py-10 max-w-2xl mx-auto rounded-xl mt-8 text-center">
+      <p class="mb-4 text-gray-700"></p>
+    
+      <img src="/simleaderboardocr.png" alt="espn" class="mx-auto max-w-xs mb-4 border border-green-200 rounded-lg shadow" />
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-600 py-6 z-10 relative mt-8">
+      <div class="mb-2">
+        <a href="/terms" class="text-green-700 hover:underline mx-2">Terms of Service</a> |
+        <a href="/privacy" class="text-green-700 hover:underline mx-2">Privacy Policy</a> |
+        <a href="/about" class="text-green-700 hover:underline mx-2">About</a>
+      </div>
+      &copy; 2025 BirdieBuzz, Inc.
+    </footer>
+
+  </div>
+
+</body>
+</html>
